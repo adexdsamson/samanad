@@ -1,18 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Modal } from '@material-ui/core';
 import Work from "../../components/gallery";
-import Img from '../../assets/samanad1.jpeg';
-import Img2 from '../../assets/samanad2.jpeg';
-import Img3 from '../../assets/samanad3.jpeg';
-import Img4 from '../../assets/samanad4.jpeg';
-import Img5 from '../../assets/samanad5.jpeg';
-import Img6 from '../../assets/samanad6.jpeg';
-import Img7 from '../../assets/samanad7.jpeg';
-import Img8 from '../../assets/samanad8.jpeg';
-import Img9 from '../../assets/samanad9.jpeg';
-import Img0 from '../../assets/samanad0.jpeg';
-import Img11 from '../../assets/samanad11.jpeg';
-import Img12 from '../../assets/samanad12.jpeg';
 
 const style = {
   margin: 'auto',
@@ -27,51 +15,51 @@ class WhyUs extends Component {
     work: [
       {
         id: 1,
-        src: Img
+        src: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593293337/samanad1.jpg'
       },
       {
         id: 2,
-        src: Img2
+        src: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593293328/samanad7.jpg'
       },
       {
         id: 3,
-        src: Img3
+        src: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593293328/samanad3.jpg'
       },
       {
         id: 4,
-        src: Img4
+        src: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593293327/samanad11.jpg'
       },
       {
         id: 5,
-        src: Img5
+        src: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593293327/samanad12.jpg'
       },
       {
         id: 6,
-        src: Img6
+        src: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593293326/samanad5.jpg'
       },
       {
         id:7,
-        src: Img7
+        src: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593293325/samanad6.jpg'
       },
       {
         id: 8,
-        src: Img8
+        src: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593293325/samanad4.jpg'
       },
       {
         id: 9,
-        src: Img9
+        src: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593293325/samanad0.jpg'
       },
       {
         id: 10,
-        src: Img0
+        src: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593293325/samanad8.jpg'
       },
       {
         id: 11,
-        src: Img11
+        src: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593293324/samanad9.jpg'
       },
       {
         id: 12,
-        src: Img12
+        src: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593293322/samanad2.jpg'
       },
     ],
     modal: false,

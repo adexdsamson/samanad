@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "4rem",
     borderBottom: "1px solid #7ABF7A",
     textTransform: "uppercase",
+    fontFamily: "'Roboto Mono', monospace",
   },
   body: {
     marginTop: "5rem",
@@ -54,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
   listTitle: {
     fontWeight: 700,
     color: '#7ABF7A',
+    fontFamily: "'Roboto Mono', monospace",
     [theme.breakpoints.up('lg')]: {
       marginTop: '5rem',
     },
@@ -64,6 +66,7 @@ const useStyles = makeStyles((theme) => ({
   listBody: {
     marginTop: '1rem',
     marginRight: 15,
+    fontFamily: "'Roboto Mono', monospace",
     [theme.breakpoints.down('md')]:{
       fontSize: '1em',
       marginRight: 0

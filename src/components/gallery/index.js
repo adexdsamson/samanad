@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     borderBottom: "1px solid #006400",
     textTransform: "uppercase",
     float: "left",
+    fontFamily: "'Roboto Mono', monospace",
   },
   card: {
     border: "1px solid #7ABF7A",
@@ -32,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Gallery = ({ title, previous, onImg }) => {
   const classes = useStyles();
+  
   let work = previous.map((item) => (
     <Grid className={classes.card} item key={item.id} sm={4}>
       <img

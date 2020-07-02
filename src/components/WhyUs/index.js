@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 12,
     marginBottom: "4rem",
     borderBottom: "1px solid #006400",
+    fontFamily: "'Roboto Mono', monospace",
     textTransform: "uppercase",
     float: "left",
   },
@@ -30,6 +31,9 @@ const useStyles = makeStyles((theme) => ({
   grid: {
     flexGrow: 1,
     textAlign: 'center'
+  },
+  list: {
+    fontFamily: "'Roboto Mono', monospace !important"
   }
 }));
 
@@ -38,7 +42,11 @@ const WhyUs = ({ title, src, point }) => {
   const list = point.map((item) => (
     <ListItem key={item.id}>
       <ListItemAvatar>{item.icon}</ListItemAvatar>
-      <ListItemText primary={item.title} secondary={item.body} />
+      <ListItemText classes={{
+        root: classes.list,
+        primary: classes.list,
+        secondary: classes.list
+      }} primary={item.title} secondary={item.body} />
     </ListItem>
   ));
   return (
@@ -55,7 +63,7 @@ const WhyUs = ({ title, src, point }) => {
           <img src={src} alt="why us" className={classes.img} />
         </Grid>
         <Grid item md={6}>
-          <List>{list}</List>
+          <List className={classes.list}>{list}</List>
         </Grid>
       </Grid>
     </Container>

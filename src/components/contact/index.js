@@ -13,6 +13,7 @@ const useStyles = makeStyles(theme => ({
     marginBottom: '4rem',
     borderBottom: '1px solid #006400',
     textTransform: 'uppercase',
+    fontFamily: "'Roboto Mono', monospace",
   },
 }));
   

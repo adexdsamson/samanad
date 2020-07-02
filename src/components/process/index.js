@@ -4,7 +4,7 @@ import { makeStyles, Container, Box, Typography, Grid } from '@material-ui/core'
    
 const useStyles = makeStyles(theme => ({
   div: {
-    backgroundColor: '#7ABF7A'
+    backgroundColor: '#2E4D2E'
   },
   section: {
     paddingTop: '5rem',
@@ -14,11 +14,14 @@ const useStyles = makeStyles(theme => ({
   title: {
     paddingBottom: 12,
     marginBottom: '4rem',
+    color: 'white',
     borderBottom: '1px solid white',
     textTransform: 'uppercase',
+    fontFamily: "'Roboto Mono', monospace",
   },
   body: {
-    marginTop: '1rem'
+    marginTop: '1rem',
+    fontFamily: "'Roboto Mono', monospace",
   },
   box: {
     textAlign: 'center',
@@ -27,18 +30,22 @@ const useStyles = makeStyles(theme => ({
   card: {
     borderRadius: 15,
     textAlign: 'center',
-    height: '15.5rem',
+    height: '18rem',
     backgroundColor: 'white',
     display: 'flex',
+    width: '18rem',
+    maxWidth: '18rem',
     flexDirection: 'column',
     alignItems: 'center',
     marginTop: '1rem',
-    '&:hover':{
+    '&:hover': {
       boxShadow: "22px 15px 28px -20px rgba(0,0,0,0.79)"
     },
-    [theme.breakpoints.down('md')]:{
+    [theme.breakpoints.down('md')]: {
       marginLeft: 0,
-      padding: 15
+      padding: 15,
+      maxWidth: "100vw",
+      width: "100%",
     }
   },
   boxIcon: {
@@ -47,17 +54,20 @@ const useStyles = makeStyles(theme => ({
     borderRadius: '50%',
     marginBottom: 15,
     marginTop: 15,
-  }
+  },
+  Subtitle: {
+    fontFamily: "'Roboto Mono', monospace",
+  },
 }));
   
 const Process = ({ title, body, point }) => {
   const classes = useStyles();
   const card = point.map(item => (
-    <Grid key={item.id} item md={5} sm={5} lg={2} className={classes.card}>
+    <Grid key={item.id} item md={6} lg={3} className={classes.card}>
       <Box className={classes.boxIcon}>
         {item.icon}
       </Box>
-      <Typography variant='h5'>
+      <Typography className={classes.Subtitle} variant='h5'>
         {item.name}
       </Typography>
       <Typography className={classes.body} variant='body1'>

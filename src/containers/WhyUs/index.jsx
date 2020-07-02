@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import Reason from "../../components/WhyUs";
-import Img from '../../assets/whyus.png';
 import { DoneOutline, Language, DoubleArrow } from '@material-ui/icons';
 
 class WhyUs extends Component {
   state = {
     title: "Why choose Samanad",
-    img: Img,
+    img: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593293326/whyus.png',
     point: [
       {
         id: 1,

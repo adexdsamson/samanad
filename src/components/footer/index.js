@@ -11,16 +11,23 @@ const useStyles = makeStyles(theme => ({
     paddingBottom: '5rem',
   },
   title: {
-    paddingBottom: 12,
-    marginBottom: '4rem',
+    marginBottom: '1rem',
     color: 'white',
-    borderBottom: '1px solid white',
-    textTransform: 'uppercase',
+    textTransform: 'capitalize',
+    fontFamily: "'Roboto Mono', monospace",
+    fontWeight: 700,
+  },
+  body: {
+    color: 'white', 
+    marginTop: 13, 
+    marginBottom: 13,
+    fontFamily: "'Roboto Mono', monospace",
   },
   text: {
     color: 'white',
     marginTop: 15,
-    pmarginBottom: 15
+    paddingBottom: 12,
+    fontFamily: "'Roboto Mono', monospace",
   },
   foot: {
     color: 'white',
@@ -30,7 +37,6 @@ const useStyles = makeStyles(theme => ({
   cont: {
     textAlign: 'center',
     paddingBottom: 15,
-    
   }
 }));
   
@@ -47,16 +53,16 @@ const Footer = ({ src, media, phone, name, click, email, body }) => {
         <Grid spacing={5} container direction='row'>
           <Grid item md={6}>
             <Avatar src={src} sizes='medium' />
-            <Typography className={classes.text} variant='h5'>
+            <Typography className={classes.title} variant='h5'>
               {name}
             </Typography>
-            <Typography style={{color: 'white', marginTop: 13, marginBottom: 13}} variant='subtitle2'>
+            <Typography className={classes.body} variant='subtitle2'>
               {body}
             </Typography>
             {social}
           </Grid>
           <Grid item md={6}>
-            <Typography className={classes.title} variant='subtitle1' display='inline'>
+            <Typography className={classes.title} variant='h5' display='inline'>
               Reach Us
             </Typography>
             <Typography className={classes.text}>

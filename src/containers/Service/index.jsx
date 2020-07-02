@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Services from "../../components/service";
-import { Add } from '@material-ui/icons';
 
 
 
@@ -11,23 +10,23 @@ class Service extends Component {
     point: [
       {
         id: 1,
-        icon: <Add style={{color: 'white'}} />,
-        name: 'Back-up/Inverter system installation & maintenance'
+        src: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593281263/IMG-20200616-WA0001.jpg',
+        name: 'Enjoy the limitless power of solar power anywhere.'
       },
       {
         id: 2,
-        icon: <Add style={{color: 'white'}} />,
-        name: 'Solar energy system installation & maintenance'
+        src: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593281264/IMG-20200616-WA0002.jpg',
+        name: 'Back-up/Inverter system installation & maintenance'
       },
       {
         id: 3,
-        icon: <Add style={{color: 'white'}} />,
+        src: 'https://res.cloudinary.com/dymahyzab/image/upload/v1593281264/IMG-20200616-WA0004.jpg',
         name: 'Electrical Installations and Energy consultancy.'
       },
       {
         id: 4,
-        icon: <Add style={{color: 'white'}} />,
-        name: 'Sales of Electrical and solar accessories'
+        src: "https://res.cloudinary.com/dymahyzab/image/upload/v1593281263/IMG-20200616-WA0003.jpg",
+        name: 'Sales of quality  Electrical and solar accessories.'
       },
     ]
   };

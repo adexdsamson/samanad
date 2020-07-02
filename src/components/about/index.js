@@ -11,7 +11,8 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 12,
     marginBottom: '4rem',
     borderBottom: '1px solid #006400',
-    textTransform: 'uppercase'
+    textTransform: 'uppercase',
+    fontFamily: "'Roboto Mono', monospace",
   },
   title: {
     marginBottom: 12
@@ -22,10 +23,13 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('md')]:{
       marginTop: 15
     }
+  },
+  body: {
+    fontFamily: "'Roboto Mono', monospace",
   }
 }));
 
-const About = ({ title, sectionTitle, src, body }) => {
+const About = ({ sectionTitle, src, body }) => {
   const classes = useStyles();
   return (
     <Container id='about' className={classes.section}>

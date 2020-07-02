@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles, Container, Box, Typography, Grid } from '@material-ui/core';
+import { makeStyles, Container, Box, Typography, Grid, Card, CardContent, CardMedia } from '@material-ui/core';
    
 const useStyles = makeStyles(theme => ({
   div: {
-    backgroundColor: '#7ABF7A'
+    backgroundColor: '#2E4D2E'
   },
   section: {
     paddingTop: '5rem',
@@ -14,8 +14,10 @@ const useStyles = makeStyles(theme => ({
   title: {
     paddingBottom: 12,
     marginBottom: '4rem',
+    color: 'white',
     borderBottom: '1px solid white',
     textTransform: 'uppercase',
+    fontFamily: "'Roboto Mono', monospace",
   },
   body: {
     marginTop: '5rem'
@@ -25,22 +27,18 @@ const useStyles = makeStyles(theme => ({
     marginBottom: '4rem'
   },
   card: {
-    borderRadius: 15,
     textAlign: 'center',
-    height: '15rem',
-    backgroundColor: 'white',
-    display: 'flex',
-    alignItems: 'center',
-    marginLeft: '1rem',
-    marginTop: '1rem',
-    flexDirection: 'column',
-    '&:hover':{
-      boxShadow: "22px 15px 28px -20px rgba(0,0,0,0.79)"
-    },
+    marginTop: '4rem',
+    maxWidth: '18rem',
+    width: '18rem',
     [theme.breakpoints.down('sm')]:{
       marginLeft: 0,
-      padding: 15
+      marginTop: 12
     }
+  },
+  card_media: {
+    height: '12rem',
+    backgroundSize: 'contain'
   },
   boxIcon: {
     backgroundColor: '#7ABF7A',
@@ -48,26 +46,29 @@ const useStyles = makeStyles(theme => ({
     borderRadius: '50%',
     marginBottom: 35,
     marginTop: 15,
+  },
+  card_container: {
+    justifyContent: 'space-between',
+    [theme.breakpoints.down('sm')]:{
+      justifyContent: 'center'
+    }
+  },
+  caption: {
+    fontWeight: 'bold'
   }
 }));
   
 const Service = ({ title, body, point }) => {
   const classes = useStyles();
   const card = point.map(item => (
-    <Grid key={item.id} item md={3} sm={5} lg={5} className={classes.card}>
-      <div className={classes.boxIcon}>
-          {item.icon}
-        </div>
-      <Container>
-        
-        <Typography variant='h5'>
+    <Card key={item.id} className={classes.card}>
+      <CardMedia className={classes.card_media} title='small' image={item.src} />
+      <CardContent>
+        <Typography className={classes.caption} variant='body2' component='p'>
           {item.name}
         </Typography>
-        <Typography className={classes.body} variant='body1'>
-          {body}
-        </Typography>
-      </Container>
-    </Grid>
+      </CardContent>
+    </Card>
   ))
   return (
     <div id='service' className={classes.div}>
@@ -80,7 +81,7 @@ const Service = ({ title, body, point }) => {
             {body}
           </Typography>
         </Box>
-        <Grid container direction='row' justify='space-between'>
+        <Grid container direction='row' alignItems='center' justify='space-between' className={classes.card_container}>
           {card}
         </Grid>
       </Container>
