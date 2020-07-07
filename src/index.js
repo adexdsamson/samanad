@@ -4,7 +4,10 @@ import './index.css';
 import app from "firebase/app";
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
+                                                               
 
 const config = {
   apiKey: process.env.REACT_APP_API_KEY ,
@@ -18,6 +21,7 @@ const config = {
 };
 
 app.initializeApp(config);
+Aos.init();
 
 ReactDOM.render(
   <React.StrictMode>

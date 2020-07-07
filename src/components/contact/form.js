@@ -57,7 +57,7 @@ const useStyles = makeStyles(theme => ({
 const Form = ({ handleFormSubmit, handleChange }) => {
   const classes = useStyles();
   return (
-    <form className={classes.container} onSubmit={handleFormSubmit}>
+    <form data-aos='fade-down' className={classes.container} onSubmit={handleFormSubmit}>
       <Grid className={classes.gridContainer} container direction='row'>
         <Grid className={classes.Grid} item lg={6} md={12} sm={12}>
           <TextField 

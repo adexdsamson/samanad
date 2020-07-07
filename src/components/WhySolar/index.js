@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
 const WhySolar = ({ title, point }) => {
   const classes = useStyles();
   const card = point.map((item) => (
-    <Grid key={item.id} item sm={6} md={6} lg={6}>
+    <Grid data-aos='fade-down' key={item.id} item sm={6} md={6} lg={6}>
       <Typography className={classes.listTitle} variant='h4'> {item.title} </Typography>
       <Typography className={classes.listBody} variant='body1'>
         {item.body}
@@ -92,6 +92,7 @@ const WhySolar = ({ title, point }) => {
             className={classes.title}
             variant="subtitle1"
             display="inline"
+            data-aos='fade-down'
           >
             {title}
           </Typography>

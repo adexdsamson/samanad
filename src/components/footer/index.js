@@ -50,7 +50,7 @@ const Footer = ({ src, media, phone, name, click, email, body }) => {
   return (
     <div className={classes.div}>
       <Container className={classes.section}>
-        <Grid spacing={5} container direction='row'>
+        <Grid data-aos='fade-down' spacing={5} container direction='row'>
           <Grid item md={6}>
             <Avatar src={src} sizes='medium' />
             <Typography className={classes.title} variant='h5'>
@@ -61,7 +61,7 @@ const Footer = ({ src, media, phone, name, click, email, body }) => {
             </Typography>
             {social}
           </Grid>
-          <Grid item md={6}>
+          <Grid data-aos='fade-down' item md={6}>
             <Typography className={classes.title} variant='h5' display='inline'>
               Reach Us
             </Typography>
@@ -81,7 +81,7 @@ const Footer = ({ src, media, phone, name, click, email, body }) => {
           </Grid>
         </Grid>
       </Container>
-      <Container className={classes.cont}>
+      <Container  className={classes.cont}>
         <Typography className={classes.text} display='inline'>
           @{ new Date().getFullYear()} Samanad Company. All Rights Reserved. Design By 
         </Typography>

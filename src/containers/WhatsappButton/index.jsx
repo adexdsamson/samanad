@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import Button from "../../components/floatButton";
 import { withScroll } from 'react-fns';
 
@@ -16,9 +16,9 @@ class FabContainer extends Component {
       handleWhatsappClick
     } = this;
     return (
-     <Fragment>
-       { y > 350 ?  <Button onChange={this.onScroll} click={handleWhatsappClick} /> : null}
-     </Fragment>
+     <div data-aos='fade-down'>
+       { y > 350 ?  <Button  onChange={this.onScroll} click={handleWhatsappClick} /> : null}
+     </div>
     )
   }
 }

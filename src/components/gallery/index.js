@@ -35,7 +35,7 @@ const Gallery = ({ title, previous, onImg }) => {
   const classes = useStyles();
   
   let work = previous.map((item) => (
-    <Grid className={classes.card} item key={item.id} sm={4}>
+    <Grid data-aos='fade-down' className={classes.card} item key={item.id} sm={4}>
       <img
         className={classes.img}
         onClick={() => onImg(item.src)}
@@ -50,6 +50,7 @@ const Gallery = ({ title, previous, onImg }) => {
         className={classes.title}
         variant="subtitle1"
         display="inline"
+        data-aos='fade-down'
       >
         {title}
       </Typography>

@@ -21,7 +21,7 @@ const Contact = ({onSubmit, title, change }) => {
   const classes = useStyles();
   return (
     <Container id='contact' className={classes.section}>
-      <Typography className={classes.title} variant='subtitle1'  display='inline'>
+      <Typography data-aos='fade-top' className={classes.title} variant='subtitle1'  display='inline'>
         {title}
       </Typography>
       <Form handleFormSubmit={onSubmit} handleChange={change} />

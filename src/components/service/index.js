@@ -61,7 +61,7 @@ const useStyles = makeStyles(theme => ({
 const Service = ({ title, body, point }) => {
   const classes = useStyles();
   const card = point.map(item => (
-    <Card key={item.id} className={classes.card}>
+    <Card data-aos='fade-down' key={item.id} className={classes.card}>
       <CardMedia className={classes.card_media} title='small' image={item.src} />
       <CardContent>
         <Typography className={classes.caption} variant='body2' component='p'>
@@ -74,7 +74,7 @@ const Service = ({ title, body, point }) => {
     <div id='service' className={classes.div}>
       <Container className={classes.section}>
         <Box className={classes.box}>
-          <Typography className={classes.title} variant='subtitle1' display='inline'>
+          <Typography data-aos='fade-down' className={classes.title} variant='subtitle1' display='inline'>
             {title}
           </Typography>
           <Typography className={classes.body} variant='body1'>

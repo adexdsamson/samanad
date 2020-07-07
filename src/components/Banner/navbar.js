@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Container } from "@material-ui/core";
+import { Menu } from '@material-ui/icons';
 
 
 function Navbar({ navItems, src, y }) {
@@ -16,10 +17,10 @@ function Navbar({ navItems, src, y }) {
       <nav className="navbar navbar-expand-lg pt-4">
         <a href="/" className="navbar-brand text-white font-f">
           <img
-            src={src}
+            src='https://res.cloudinary.com/dymahyzab/image/upload/v1594155274/SAMANAD_circle_3.png'
             width="30"
             height="30"
-            className="d-inline-block align-top mr-3"
+            className="d-inline-block align-top mr-3 rounded"
             alt=".."
           />
           Samanad
@@ -33,7 +34,7 @@ function Navbar({ navItems, src, y }) {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <Menu className='text-white' />
         </button>
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav justify-content-end">{Item}</ul>

@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 const WhyUs = ({ title, src, point }) => {
   const classes = useStyles();
   const list = point.map((item) => (
-    <ListItem key={item.id}>
+    <ListItem data-aos='fade-down' key={item.id}>
       <ListItemAvatar>{item.icon}</ListItemAvatar>
       <ListItemText classes={{
         root: classes.list,
@@ -55,11 +55,12 @@ const WhyUs = ({ title, src, point }) => {
         className={classes.title}
         display="inline"
         variant="subtitle1"
+        data-aos='fade-down'
       >
         {title}
       </Typography>
       <Grid spacing={5} container direction="row" alignItems="center">
-        <Grid className={classes.grid} item md={6}>
+        <Grid data-aos='fade-down' className={classes.grid} item md={6}>
           <img src={src} alt="why us" className={classes.img} />
         </Grid>
         <Grid item md={6}>

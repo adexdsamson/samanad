@@ -63,7 +63,7 @@ const useStyles = makeStyles(theme => ({
 const Process = ({ title, body, point }) => {
   const classes = useStyles();
   const card = point.map(item => (
-    <Grid key={item.id} item md={6} lg={3} className={classes.card}>
+    <Grid data-aos='fade-down' key={item.id} item md={6} lg={3} className={classes.card}>
       <Box className={classes.boxIcon}>
         {item.icon}
       </Box>
@@ -79,10 +79,10 @@ const Process = ({ title, body, point }) => {
     <div className={classes.div}>
       <Container className={classes.section}>
         <Box className={classes.box}>
-          <Typography className={classes.title} variant='subtitle1' display='inline'>
+          <Typography data-aos='fade-down' className={classes.title} variant='subtitle1' display='inline'>
             {title}
           </Typography>
-          <Typography className={classes.body} variant='body1'>
+          <Typography data-aos='fade-down' className={classes.body} variant='body1'>
             {body}
           </Typography>
         </Box>

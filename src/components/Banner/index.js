@@ -6,7 +6,7 @@ import Typing from 'react-typing-effect';
 const useStyles = makeStyles((theme) => ({
   Intro: {
     position: "relative",
-    background: `url(https://res.cloudinary.com/dymahyzab/image/upload/v1593293345/solar_banner.png)`,
+    background: `url(https://res.cloudinary.com/dymahyzab/image/upload/v1594155270/IMG-20191012-WA0008.jpg)`,
     width: "100%",
     height: 685,
     backgroundSize: "cover",

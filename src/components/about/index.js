@@ -33,19 +33,19 @@ const About = ({ sectionTitle, src, body }) => {
   const classes = useStyles();
   return (
     <Container id='about' className={classes.section}>
-      <Typography display='inline' className={classes.sectionTitle} variant="subtitle1">
+      <Typography data-aos='fade-down' display='inline' className={classes.sectionTitle} variant="subtitle1">
         {sectionTitle}
       </Typography>
       <Grid spacing={5} style={{marginTop: '2rem'}} container direction="row" alignItems='center'>
         <Grid item md={6}>
           <Container>
-            <Typography className={classes.body} variant="body1">
+            <Typography data-aos='fade-down'className={classes.body} variant="body1">
               {" "}
               {body}{" "}
             </Typography>
           </Container>
         </Grid>
-        <Grid item md={6}>
+        <Grid data-aos='fade-down' item md={6}>
           <img className={classes.img} src={src} alt="Who we are" />
         </Grid>
       </Grid>
