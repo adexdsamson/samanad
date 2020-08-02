@@ -10,20 +10,20 @@ class WhyUs extends Component {
       {
         id: 1,
         icon: <DoneOutline />,
-        title: 'Tested & Trusted',
-        body: 'We deploy only tested and trusted products. We exhibit the highest level of integrity in how we do business, operate in our communities and interact with our clients. We strive for honesty in our communications and in our interactions with clients.'
+        title: 'Tested, Trusted & Lasting',
+        body: 'We setup products that are trusted, tested and much lasting. Our noble activities is infused well into our business, community engagement and interaction with clients.'
       },
       {
         id: 2,
         icon: <Language />,
         title: 'Professionalism',
-        body: 'Our Engineers are highly trained with over 10 years of experience. We are dedicated to the long term success of our company through the use of excellence business practices and focusing on sustainablility, profit, productivity, quality and technical skill building.'
+        body: 'Our engineers are well trained with over 10 years of experience in solar industry. Each enigeer is dedicated on a long term success of samanad company through the use of brilliance business practices, sustainability, quality and technical skill building.'
       },
       {
         id: 3,
         icon: <DoubleArrow />,
         title: 'Safety First',
-        body: 'We pride ourselves in following safety precautions during and after installation. Our Engineers are trained in safe work practices and design all of our systems with product and personnel safety at the forefront.'
+        body: 'Safety is not just a word but a practice taken during and after installation. Safety and precaution are work ethics practiced by our engineers on site.'
       },
     ],
   };
